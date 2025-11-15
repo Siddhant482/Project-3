@@ -1,56 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-  <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-  <title>Hello World!</title>
-
-  <!-- The website stylesheet -->
-  <link rel="stylesheet" href="/style.css" />
-
-  <!-- The website JavaScript file -->
-  <script src="/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Your Website</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
-
 <body>
-  <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-  <div class="wrapper">
-    <div class="content" role="main">
-      <h1 class="title">M name is Siddhant Badri!</h1>
-      <img src="/cool-website.svg" class="illustration" alt="cool website" />
-      <div class="instructions">
-        <p>
-          Fork <a href="https://github.com/glitchdotcom/website-to-compute">this project</a> and open it in a GitHub Codespace.
-        </p>
-        <p> Follow the steps in the README to deploy your new website to Fastly in a few steps!
-        </p>
 
-      </div>
-
-      <footer class="footer">
-        <div>
-          <a class="remix" href="https://github.com/glitchdotcom/website-to-compute">🚧 Get your own site</a>
+    <header>
+        <div class="logo">
+            <h1>[Logo/Site Name]</h1>
         </div>
-      </footer>
-    </div>
-  </div>
-</body>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>[Catchy Headline/Main Message]</h2>
+                <p>[Supporting text for your main image/product/service]</p>
+                <a href="#cta" class="button">[Call to Action Button]</a>
+            </div>
+            </section>
+
+        <section id="introduction" class="content-section">
+            <h3>[Section Title: Introduction to Key Feature]</h3>
+            <p>[A short paragraph introducing a key feature, service, or product]</p>
+            <div class="key-points">
+                <div class="point-card">
+                    <h4>Feature 1</h4>
+                    <p>Description of feature one.</p>
+                </div>
+                <div class="point-card">
+                    <h4>Feature 2</h4>
+                    <p>Description of feature two.</p>
+                </div>
+                <div class="point-card">
+                    <h4>Feature 3</h4>
+                    <p>Description of feature three.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h3>[Section Title: Image Gallery]</h3>
+            <div class="image-grid">
+                <img src="path/to/image1.jpg" alt="Gallery Image 1">
+                <img src="path/to/image2.jpg" alt="Gallery Image 2">
+                <img src="path/to/image3.jpg" alt="Gallery Image 3">
+                <img src="path/to/image4.jpg" alt="Gallery Image 4">
+                <img src="path/to/image5.jpg" alt="Gallery Image 5">
+                <img src="path/to/image6.jpg" alt="Gallery Image 6">
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+            <a href="#sitemap">Sitemap</a>
+        </div>
+        <p>&copy; <span id="current-year">2025</span> [Your Site Name]. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
 </html>
