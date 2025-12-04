@@ -1,21 +1,20 @@
-/* A set of default styles */
+
 :root {
-  /* Generic sizing for the page */
+ 
   --wrapper-height: 100vh;
 
-  /* Fonts for different elements */
+
   --font-family: sans-serif;
   --font-family-list: monospace;
 
-  /* Colors you'll see cascade through the elements */
-  --color-bg: #99ddff; /* Used for the page body background */
-  --color-bg-alt: #33b1ff; /* Used for social icons on hover */
-  --color-text-main: #004099; /* List text ann social icons on hover */
-  --color-primary: #006aff; /* Headers and borders */
-  --color-highlight: #e7f7fe; /* Highlights */
+  --color-bg: #99ddff; 
+  --color-bg-alt: #33b1ff; 
+  --color-text-main: #004099; 
+  --color-primary: #006aff; 
+  --color-highlight: #e7f7fe; 
 }
 
-/* Basic page style resets */
+
 * {
   box-sizing: border-box;
 }
@@ -23,7 +22,7 @@
   display: none !important;
 }
 
-/* Page structure */
+
 body {
   font-family: var(--font-family);
   background-color: var(--color-bg);
@@ -31,7 +30,7 @@ body {
   margin: 0;
   font-size:large;
 }
-/* Page structure */
+
 .wrapper {
   min-height: var(--wrapper-height);
   display: grid;
@@ -75,7 +74,7 @@ body {
   }
 }
 
-/* Typography */
+
 p {
   margin: 1rem;
   line-height: 1.3em;
@@ -93,7 +92,7 @@ h1 {
   color: var(--color-primary);
   justify-content: center;
 }
-/* Link styles */
+
 a:link,
 a:visited {
   text-decoration: none;
@@ -108,7 +107,7 @@ a:focus {
   background: var(--color-primary);
   color:var(--color-highlight);
 }
-/* Navigation grid */
+
 .footer {
   display: flex;
   justify-content: space-between;
