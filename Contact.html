@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+    <!-- Page Title-->
+    <title>Contact Us</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000; /* consistent black background */
+            color: #ffffff; 
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px;
+            background-color: #000000;
+            border-bottom: 2px solid #444;
+        }
+        
+        nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #ffffff; 
+            font-weight: bold;
+        }
+        
+        .page-title {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 32px;
+            border-bottom: 2px solid #444;
+        }
+        
+        /* Contact Form */
+         .contact-form {
+            max-width: 500px; 
+            margin: 40px auto; /* centering the form */
+            text-align: left;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #444;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #666; /* hover effect */
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000;
+            border-top: 2px solid #444;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div id="logo">
+            <img src="logo.png" alt="Website Logo" style="height:40px;">
+        </div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="page-title">
+        <h1><em>Contact Us</em></h1>
+    </section>
+
+    <section class="contact-form">
+        <form id = "contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your full name">
+
+            <!-- Email field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+
+            <!-- Message field -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" placeholder="Your message..."></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>  
+
+    <script>
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert("Thank you! Your message has been sent."); // Shows a pop up to demonstrate the message has been sent
+            form.reset(); // Clears the form of text
+        });
+    </script>
+
+    <footer>
+        <span>© 2025</span>
+        <span>|</span>
+        <img src="Instagram.png" alt="Instagram" class="footer-icon" style="width:25px; height:25px;">
+    </footer>
+
+</body>
+</html>
+

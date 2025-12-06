@@ -4,21 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Art of Everyday Objects</title>
+
+    <link rel="stylesheet" href="style.css">
+
     <style>
+        /* General Body Styling */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #000000;
             color: #ffffff;
         }
+        /* Header Styling */
         header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            display: flex; 
+            justify-content: space-between; /* Pushes log left */
+            align-items: center; /* vertically centers items */
             padding: 15px 25px;
             background-color: #000000;
             border-bottom: 2px solid #444;
         }
+        /* Makes the logo text larger and bold */
         #logo {
             font-size: 22px;
             font-weight: bold;
@@ -54,7 +60,6 @@
             background-color: #000000;
             padding: 40px 20px;
             text-align: center;
-            border-bottom: 2px solid #444;
         }
         .collections-grid {
             display: grid;
@@ -63,20 +68,21 @@
             max-width: 900px;
             margin: 20px auto;
         }
-        .collection-box {
-            width: 100%;
+        /* Each clickable collection item */
+        .collection-box { 
+            width: 100%; 
             height: 140px;
             background-color: #bbbbbb;
             border: 2px solid #888;
-            display: flex;
+            display: flex; /* flex container to center text */
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            font-weight: bold;
+            font-weight: bold; /* text bold */
             color: #ffffff;
             position: relative;
             overflow: hidden;
-            text-decoration: none;
+            text-decoration: none; /* removes underline from links */
         }
 
 
@@ -92,7 +98,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 255, 0.4);
+            background: rgba(255, 0, 0, 0.616);
             z-index: 0;
         }
         .tools-bg span {
@@ -113,7 +119,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(255, 0, 0, 0.35); 
+            background: rgba(255, 0, 0, 0.616); 
             z-index: 0;
         }
         .accessories-bg span {
@@ -134,7 +140,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 255, 0, 0.35); 
+            background: rgba(255, 0, 0, 0.616); 
             z-index: 0;
         }
         .furniture-bg span {
@@ -155,7 +161,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(255, 255, 0, 0.35); 
+            background: rgba(255, 0, 0, 0.616); 
             z-index: 0;
         }
         .vintagetech-bg span {
@@ -168,21 +174,24 @@
             padding: 20px;
             background-color: #000000;
             border-top: 2px solid #444;
-        }
+            margin-top: 80px;  
+        }   
 
     </style>
 </head>
 <body>
     <header>
-        <div id="logo">Logo</div>
+        <div id="logo">
+            <img src="logo.png" alt="Website Logo" style="height:40px;">
+        </div>
         <nav>
             <a href="index.html">HOME</a>
-            <a href="contact.html">CONTACT</a>
+            <a href="Contact.html">CONTACT</a>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>Art of Everyday Objects</h1>
+        <h1><em>Art of Everyday Objects</em></h1>
     </section>
 
     <section class="about-preview">
@@ -192,11 +201,12 @@
     <section class="collections-section">
         <h2>Collections</h2>
         <div class="collections-grid">
-
+            
+            <!-- Collection 1-->
             <a href="collection1.html" class="collection-box tools-bg">
                 <span>Household Tools & Utensils</span>
             </a>
-
+             <!-- Collection 2-->
             <a href="collection2.html" class="collection-box accessories-bg">
                 <span>Personal Accessories</span>
             </a>
@@ -204,15 +214,19 @@
             <a href="collection3.html" class="collection-box furniture-bg">
                 <span>Furniture</span>
             </a>
-
+            <!-- Collection 4-->
             <a href="collection4.html" class="collection-box vintagetech-bg">
                 <span>Vintage Tech</span>
             </a>
         </div>
     </section>
 
-    <footer>
-        © 2025 | OTHER ICONS
-    </footer>
+
+<footer>
+    <span>© 2025</span>
+    <span>|</span>
+    <img src="Instagram.png" alt="Instagram" class="footer-icon">  <!-- Instagram Icon -->
+</footer>
+
 </body>
 </html>
