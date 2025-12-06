@@ -1,8 +1,6 @@
 ![Alt text](Homepage.png) 
 ![Alt text](ContentPage.png)
 
-Please click Ctrl+Shift+v to view both images
-
 This project allowed me to design and develop a multi-page website that displays four different collections and items that fall in those respective categories. Looking back at my original low-fidelity prototypes, I can clearly see how my ideas evolved during development and where I made changes to improve the site’s structure and usability, and where I had to cut ideas short as they were not practical to complete. 
 
 One of the major changes that I made was removing the "Collections" button from the top navigation bar. In my prototype, I  originally included this menu item, but once I created the homepage, I found that the user can already access all the collections there itself, so a collections button at the top was redundant. Due to this, I decided to keep the navigation simple with only HOME and CONTACT buttons. 
